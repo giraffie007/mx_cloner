@@ -91,14 +91,23 @@ class mx_cloner_acc {
                 delete EE.publish.autosave;
             };';
 
-            //grid_support
+            // Grid Support
             $out .= '
-                        $("[name*=\'row_id_\']").each(function (e) {
-                                var grid_name = $(this).attr("name");
-                                grid_name =  grid_name.replace("row_id_", "new_row_");
-                                $(this).attr("name", grid_name);
-                        });
+                $("[name*=\'row_id_\']").each(function (e) {
+                    var grid_name = $(this).attr("name");
+                    grid_name =  grid_name.replace("row_id_", "new_row_");
+                    $(this).attr("name", grid_name);
+                });
             ';
+            
+            // Blocks support
+            $out .= '
+                $("[name*=\'blocks_block_id_\']").each(function (e) {
+					var block_name = $(this).attr("name");
+					block_name =  block_name.replace("blocks_block_id_", "blocks_new_row_");
+					$(this).attr("name", block_name);
+    			});
+    		';
 
             //ExpressionStore support
             $out .= '
