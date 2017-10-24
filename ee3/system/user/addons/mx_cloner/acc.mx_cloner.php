@@ -108,7 +108,7 @@ class mx_cloner_acc {
 					$(this).attr("name", block_name);
     			});
     		';
-            // Bloqs support
+            // Bloqs support (TODO:: Testing)
             $out .= '
                 $("[name*=\'bloqs_block_id_\']").each(function (e) {
 					var bloq_name = $(this).attr("name");
