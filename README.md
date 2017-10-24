@@ -14,7 +14,7 @@ This extension adds the ability to clone entries in CP.
 ##Installation
 * Download the latest version of MX Cloner and extract the .zip to your desktop.
 * EE2: Copy *ee2/system/expressionengine/third_party/mx_cloner* to *system/expressionengine/third_party/mx_cloner/*
-* EE3: Copy *ee3/system/expressionengine/third_party/mx_cloner* to *system/user/addons/mx_cloner/*
+* EE3: Copy *ee3/system/user/addons/mx_cloner* to *system/user/addons/mx_cloner/*
 
 ##Activation
 * Log into your control panel

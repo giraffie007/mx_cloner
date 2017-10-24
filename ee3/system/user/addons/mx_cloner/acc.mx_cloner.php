@@ -108,6 +108,14 @@ class mx_cloner_acc {
 					$(this).attr("name", block_name);
     			});
     		';
+            // Bloqs support
+            $out .= '
+                $("[name*=\'bloqs_block_id_\']").each(function (e) {
+					var bloq_name = $(this).attr("name");
+					bloq_name =  bloq_name.replace("bloqs_block_id_", "bloqs_new_row_");
+					$(this).attr("name", bloq_name);
+    			});
+    		';
 
             //ExpressionStore support
             $out .= '
